@@ -1,0 +1,111 @@
+#root {
+  width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  padding: 50px 30px 70px;
+  background: #f6f1eb;
+}
+
+.app-header {
+  width: min(1100px, 100%);
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #352820;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.app-header p {
+  margin: 10px 0 25px;
+  color: #806f63;
+  font-size: 1.05rem;
+}
+
+.add-button {
+  padding: 13px 26px;
+  border: none;
+  border-radius: 12px;
+  background: #795548;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(76, 55, 43, 0.18);
+  transition: 0.2s ease;
+}
+
+.add-button:hover {
+  background: #604439;
+  transform: translateY(-2px);
+}
+
+.recipe-list {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .recipe-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 30px 16px 50px;
+  }
+
+  .recipe-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filters {
+  width: min(1100px, 100%);
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+}
+
+.filters input,
+.filters select {
+  padding: 13px 15px;
+  border: 1px solid #dfd1c6;
+  border-radius: 11px;
+  background: white;
+  color: #493930;
+  outline: none;
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #795548;
+  box-shadow: 0 0 0 3px rgba(121, 85, 72, 0.1);
+}
+
+@media (max-width: 700px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 16px;
+  background: #fff8f0;
+  border: 1px solid #ead8c5;
+  color: #6b5545;
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
