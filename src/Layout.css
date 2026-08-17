@@ -32,7 +32,6 @@
     color: #9a6b57;
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .navbar {
         padding: 15px 16px;
