@@ -156,3 +156,48 @@ main {
     padding: 24px 18px;
   }
 }
+
+@media (max-width: 600px) {
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    min-width: 0;
+  }
+
+  main {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .app-header,
+  .filters,
+  .recipe-list,
+  .form-container {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .recipe-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .recipe-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
