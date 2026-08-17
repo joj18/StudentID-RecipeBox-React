@@ -1,0 +1,175 @@
+.recipe-card {
+    min-width: 0;
+    min-height: 310px;
+    padding: 26px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #eadfd6;
+    box-shadow: 0 8px 25px rgba(70, 50, 40, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(70, 50, 40, 0.14);
+}
+
+.recipe-card.easy {
+    border-top: 6px solid #78a96b;
+}
+
+.recipe-card.medium {
+    border-top: 6px solid #d99a3d;
+}
+
+.recipe-card.hard {
+    border-top: 6px solid #c96b62;
+}
+
+.recipe-info h2 {
+    margin: 0 0 22px;
+    color: #352820;
+    font-size: 1.45rem;
+}
+
+.recipe-info p {
+    margin: 12px 0;
+    color: #75665c;
+    font-size: 0.98rem;
+}
+
+.difficulty {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.easy .difficulty {
+    background: #e6f2e1;
+    color: #4e783f;
+}
+
+.medium .difficulty {
+    background: #fff0d5;
+    color: #96651f;
+}
+
+.hard .difficulty {
+    background: #f8e0dd;
+    color: #a24e45;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.card-buttons button {
+    flex: 1;
+    padding: 11px 8px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.card-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.edit-button {
+    background: #f0e7df;
+    color: #65483a;
+}
+
+.edit-button:hover {
+    background: #795548;
+    color: white;
+}
+
+.cook-button {
+    background: #795548;
+    color: white;
+}
+
+.cook-button:hover {
+    background: #604439;
+}
+
+.cook-button:disabled {
+    opacity: 0.65;
+    cursor: default;
+    transform: none;
+}
+
+.delete-button {
+    background: #f3dddd;
+    color: #a24e45;
+}
+
+.delete-button:hover {
+    background: #e9c9c6;
+}
+
+.timer {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f1e7dd;
+    color: #65483a;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .recipe-card {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: auto;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .recipe-info h2 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    .recipe-info p {
+        margin: 9px 0;
+        font-size: 0.95rem;
+    }
+
+    .difficulty {
+        margin-top: 8px;
+    }
+
+    .card-buttons {
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 20px;
+    }
+
+    .card-buttons button {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .timer {
+        margin-top: 14px;
+    }
+}

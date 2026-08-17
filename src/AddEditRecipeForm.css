@@ -1,0 +1,155 @@
+.form-container {
+    width: min(700px, 100%);
+    margin: 0 auto 45px;
+}
+
+.form-container form {
+    padding: 32px;
+    border-radius: 22px;
+    background: #fff;
+    border: 1px solid #eadfd6;
+    box-shadow: 0 12px 35px rgba(70, 50, 40, 0.12);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    margin: 0 0 8px;
+    color: #352820;
+    font-size: 1.8rem;
+}
+
+.form-header p {
+    margin: 0;
+    color: #89786c;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 20px;
+    color: #493930;
+    font-weight: 700;
+}
+
+.form-container input,
+.form-container textarea {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 13px 14px;
+    border: 1px solid #d9cbc0;
+    border-radius: 11px;
+    background: #fcfaf8;
+    color: #302821;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #795548;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(121, 85, 72, 0.12);
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #aaa09a;
+}
+
+.form-container small {
+    display: block;
+    margin-top: 6px;
+    color: #bd5148;
+    font-size: 0.82rem;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.save-button {
+    background: #795548;
+    color: white;
+}
+
+.save-button:hover {
+    background: #604439;
+}
+
+.cancel-button {
+    background: #eee5de;
+    color: #5d4d44;
+}
+
+.cancel-button:hover {
+    background: #ded3ca;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container form {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .form-header {
+        margin-bottom: 24px;
+    }
+
+    .form-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-header p {
+        font-size: 0.9rem;
+    }
+
+    .form-container input,
+    .form-container textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .form-container textarea {
+        min-height: 110px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    .form-buttons button {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 13px;
+    }
+}
