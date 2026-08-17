@@ -109,3 +109,50 @@ main {
   font-weight: 500;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 12px 40px;
+    overflow-x: hidden;
+  }
+
+  .app-header {
+    margin-bottom: 30px;
+  }
+
+  .app-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .app-header p {
+    font-size: 0.95rem;
+  }
+
+  .filters {
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .recipe-list {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .empty-state {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 25px auto;
+    padding: 24px 18px;
+  }
+}
